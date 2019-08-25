@@ -1,5 +1,5 @@
 // 注意：字符串不能为空串
-int _kmp_next(int next_a[], const char ch_a[], int length) {
+int kmp_next(int next_a[], const char ch_a[], int length) {
 	next_a[0] = -1;
 	int next = 0;
 	for (int next_i = 1, sub_i = 0; next_i != length;
